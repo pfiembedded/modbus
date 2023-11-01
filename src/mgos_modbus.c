@@ -247,8 +247,8 @@ static void uart_cb(int uart_no, void* param) {
     }
 
     mgos_uart_read_mbuf(uart_no, buffer, rx_av);
-    LOG(LL_VERBOSE_DEBUG, ("SlaveID: %.2x, Function: %.2x - uart_cb - Receive Buffer: %d, Read Available: %d",
-                           s_modbus->slave_id_u8, s_modbus->func_code_u8, s_modbus->receive_buffer.len, rx_av));
+    LOG(LL_DEBUG, ("SlaveID: %.2x, Function: %.2x - uart_cb - Receive Buffer: %d, Read Available: %d",
+                    s_modbus->slave_id_u8, s_modbus->func_code_u8, s_modbus->receive_buffer.len, rx_av));
     update_modbus_read_state(buffer);
 }
 
