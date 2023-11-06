@@ -1,5 +1,5 @@
 ## Overview
-This is a Modbus master library for mongoose os. 
+This is a Modbus library for Mongoose OS. 
 
 ## Features
 The following Modbus functions are available:
@@ -21,7 +21,7 @@ Registers
   - 0x17 - Read Write Multiple Registers
 
 ## Hardware
-Tested on ESP32 and mongoose os version 2.17.0
+Tested on ESP32 and Mongoose OS version 2.20.0
 
 
 ## Example
